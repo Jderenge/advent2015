@@ -19,5 +19,4 @@ for line in lines:
 print(pos)
 print(part2answer)
 # Jonny Derenge
-# test
-# white frat boys
+# Men
