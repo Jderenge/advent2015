@@ -11,10 +11,11 @@ for line in lines:
             pos = pos + 1
         else:
             pos = pos -1
-            if pos == -1 and part2answer == 0: 
-                part2answer = counting
+            if pos == -1 and part2answer == 0: # Needs to be the first time Santa enters the basement
+                part2answer = counting 
                 
         counting += 1
 
 print(pos)
 print(part2answer)
+# Jonny Derenge
