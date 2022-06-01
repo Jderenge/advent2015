@@ -10,11 +10,10 @@ while(1):
     # Append number to end of input
     ninput += str(counter)
     # Hash new input
-    hash = hash.hexdigest(ninput)
+    newhash = hashlib.md5(ninput.encode())
     # # Check new hashcheck to see if hash starts with 5 leading zeros
-    newhash = hash.hexdigest(ninput)
-    if newhash([0,6] == checker):
+    if (newhash.hexdigest()[0:5] == checker):
         print(counter)
         quit
     # # If it does, print counter and break
-    counter +=  1   #yo
+    counter += 1
